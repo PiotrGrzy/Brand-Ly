@@ -1,8 +1,11 @@
-## Weekly Dev Challenge nr 24
+# Weekly Dev Challenge nr 24
 
-# Technology stack:
+## Technology stack:
 
-Bootstap 4
-SCSS
-HTML5
-CSS3
+### Bootstap 4
+
+### SCSS
+
+### HTML5
+
+### CSS3

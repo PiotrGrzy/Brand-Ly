@@ -12,11 +12,11 @@
 
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#main-nav" data-offset="0">
     <!-- NAVIGATION -->
 
     <div class="container my-0">
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="main-nav">
             <a class="navbar-brand" href="#">
                 <h3 class="custom-brand">Brand ly</h3>
             </a>
@@ -28,25 +28,23 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item mr-5 active">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="#main-header">Home</a>
                     </li>
                     <li class="nav-item mr-5 ">
-                        <a class="nav-link" href="#">Shop</a>
+                        <a class="nav-link" href="#shop">Shop</a>
                     </li>
                     <li class="nav-item mr-5 ">
-                        <a class="nav-link" href="#">Brands</a>
+                        <a class="nav-link" href="#brands">Brands</a>
                     </li>
                     <li class="nav-item mr-5 ">
-                        <a class="nav-link" href="#">Blog</a>
+                        <a class="nav-link" href="#blog">Blog</a>
                     </li>
                     <li class="nav-item mr-5 ">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#contact">About</a>
                     </li>
                     <li class="nav-item mr-5 ">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
-
-
                 </ul>
 
             </div>
@@ -103,17 +101,24 @@
                         </div>
                     </div>
                 </div>
+                <a class="carousel-control-prev" href="#carouselHeader" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselHeader" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
 
             </div>
         </div>
     </header>
 
-    <section class="latest-products py-5">
+    <section class="latest-products py-5" id="shop">
         <div class="container">
             <h2 class="custom-header">
                 Latest Products
             </h2>
-
             <div class="row">
                 <div class="col-md-4">
                     <div class="border-image">
@@ -154,7 +159,7 @@
         </div>
     </section>
 
-    <section class="trending-items">
+    <section class="trending-items" id="brands">
         <h2 class="custom-header">
             Trending Items
         </h2>
@@ -207,7 +212,7 @@
     </section>
 
 
-    <section class="blog">
+    <section class="blog" id="blog">
         <h2 class="custom-header">
             From the Blog
         </h2>
@@ -250,27 +255,18 @@
                                         creaions. From frames,to glass thickness she blew me away...</p>
                                     <button class="btn btn-outline-dark mx-auto px-5 py-3 mt-4">READ
                                         MORE</button>
-
                                 </div>
                             </div>
                         </div>
                     </div>
 
                 </div>
-                <a class="carousel-control-prev" href="#carouselBlog" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselBlog" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+
             </div>
         </div>
     </section>
 
-
-    <section class="subscribe py-5">
+    <section class="subscribe py-5" id="contact">
         <div class="container">
             <div class="form-group text-white">
                 <label class="py-3">SUBSCRIBE TO OUR NEWSLETTER TO RECEIVE LATEST NEWS AND OFFERS</label>
@@ -304,7 +300,7 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
     <script src="https://kit.fontawesome.com/fd1701f265.js"></script>
-
+    <script src="index.js"></script>
 </body>
 
 </html>

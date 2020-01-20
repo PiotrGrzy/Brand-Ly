@@ -1,8 +1,9 @@
-@import "custom/variables";
-@import "node_modules/bootstrap/scss/bootstrap";
+@import 'custom/variables';
+@import 'node_modules/bootstrap/scss/bootstrap';
 
 body {
   overflow-x: hidden;
+  position: relative;
 }
 .custom-brand {
   font-size: 3rem;
@@ -21,21 +22,24 @@ body {
   &-item {
     margin-right: 20px;
   }
+
+  &-item .active {
+    transform: scale(1.2) !important;
+    color: $red !important;
+  }
 }
 
 .header {
-  background: url("../assets/images/bg.jpg") center;
+  background: url('../assets/images/bg.jpg') center;
   background-size: cover;
 }
 
 .header .carousel-item {
   color: white;
 }
-
-.carousel {
-  position: initial;
+.carousel-indicators {
+  transform: translateY(20vh);
 }
-
 .carousel-indicators li {
   width: 10px;
   height: 10px;
@@ -53,7 +57,7 @@ body {
 
 .custom-header::before,
 .custom-header::after {
-  content: "";
+  content: '';
   display: block;
   width: 120px;
   border: 2px solid $red;
@@ -75,8 +79,7 @@ body {
     outline-offset: -20px;
     filter: brightness(50%);
   }
-
-  img:hover {
+  &:hover > img {
     filter: brightness(100%);
   }
 
@@ -102,7 +105,7 @@ body {
   }
   .image-text-big::before,
   .image-text-big::after {
-    content: "";
+    content: '';
     display: block;
     width: 200px;
     height: 1px;
@@ -132,7 +135,7 @@ label.container {
 }
 
 /* Hide the browser's default radio button */
-.container input [type="radio"] {
+.container input [type='radio'] {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -142,7 +145,6 @@ label.container {
 
 /* Create a custom radio button */
 .checkmark {
-  content: "L";
   position: absolute;
   top: 0;
   left: 0;
@@ -178,6 +180,11 @@ label.container {
   color: $red;
 }
 
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 /* SUBSCRIBE */
 
 .subscribe {
@@ -186,7 +193,7 @@ label.container {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url("../assets/images/sub_bg.jpg");
+    url('../assets/images/sub_bg.jpg');
   background-size: cover;
 
   input::placeholder {
